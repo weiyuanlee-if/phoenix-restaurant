@@ -6,8 +6,10 @@ $content-font: 'PT Serif', serif;
 @mixin logo-text() {
   color: #C4171D;
   font-family: $logo-font;
+  margin: 0;
   font-weight: 800;
   font-size: 2em; 
+  text-transform: uppercase;
 }
 @mixin red-button() {
   font-family: $content-font;
@@ -35,6 +37,7 @@ body {
 .brand-title {
  @include logo-text();
  margin-top: 0.5em;
+
 }
 .logo-section {
   display: flex;
@@ -198,15 +201,63 @@ margin: 0px;
   padding: 4em 4em 4em 4em;
   width: 583px;
   height: 130px;
-  margin: 5em 5em 5em 5em;
+  margin: 8em 2em 5em 2em;
 
 background-color: white;
 }
 .content-img {
   width: 621px;
-  height: 298px;
+  height: 398px;
   margin: 4.5em;
 }
+.footer-address {
+  
+  text-align: center;
+  font-size: 18px;
+  background-color: white;
+  font-family: $content-font;
+
+}
+.footer-navbar {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+ align-items: center;
+  list-style-type: none;
+  padding: 0px;
+  margin-right: 4em;
+}
+.footer-navbar li {
+margin-left: 3em;
+
+}
+.footer-logo {
+  @include logo-text();
+  padding: 0;
+  margin-left: 1.5em;
+  justify-content: center;
+}
+
+hr.solid {
+  border-top: 2px solid #C4171D;
+ margin: 2em;
+}
+.socialmedia-list {
+  color: #C4171D;
+  font-size: 44px;
+ 
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-right: 1em;
+}
+.socialmedia-list li {
+  margin-left: 0.5em;
+
+}
+
   @media(max-width: 800px) {
     .brand-title{
     @include logo-text();
