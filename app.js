@@ -5,7 +5,7 @@ const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 toggleButton.addEventListener('click', () => { 
     navbarLinks.classList.toggle('active')
 })
-/*
+
 //slideshow
 var slideIndex = 1;
 showSlides(slideIndex);
@@ -34,4 +34,4 @@ function showSlides(n) {
     }
     slides[slideIndex-1].style.display = "block";
     dots[slideIndex-1].className += " active";
-}*/
+}

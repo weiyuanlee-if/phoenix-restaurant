@@ -21,7 +21,15 @@ $content-font: 'PT Serif', serif;
 }
 @mixin food-card() {
 @include red-button();
-
+}
+@mixin white-heading() {
+  color: white;
+  text-align: center;
+  font-family: $heading-font;
+}
+@mixin content-text() {
+  font-family: $content-font;
+  font-size: 18px;
 }
 html {
   box-sizing: border-box;
@@ -33,7 +41,9 @@ body {
   background-color: #ffffff;
 
 }
-
+.site-container {
+ 
+}
 .brand-title {
  @include logo-text();
  margin-top: 0.5em;
@@ -44,7 +54,7 @@ body {
   justify-content: space-evenly;
   
 }
-#brand-logo {
+.brand-logo {
   height: 100%;
   width: 25%;
   margin-left: 2em;
@@ -110,51 +120,44 @@ body {
   height: 100%;
   overflow: hidden;
 }
-.content-card {
+.cta-card {
   position: absolute;
   width: 720px;
   height: 295px;
   margin: 0em 10em;
-  bottom: 15em;
+  bottom: 20em;
   background-color: rgba(196, 23, 29, 0.61);
 }
-.content-hd1 {
-color: white;
-text-align: center;
-font-family: $heading-font;
+.cta-hd1 {
+@include white-heading();
 margin: 0px; 
 padding-top: 1em;
 
 }
-.content-hd2 {
-  color: white;
-  text-align: center;
-  font-family: $heading-font;
+.cta-hd2 {
+  @include white-heading();
   margin: 0px;
-  padding: 1em;
+  padding-top: 1em;
   }
-.content-text {
+.cta-text {
   color: white;
   text-align: left;
   padding: 0em 5.5em 0em 5.5em;
-  font-size: 18px;
-  font-family: $content-font;
+  @include content-text();
 }
-.content-img-container1 {
+.packages-img-container {
   position: relative;
   display: block;
   background-image: url(/images/pattern1.png);
   background-repeat: no-repeat;
   height: 100%;
 }
-
-.content-img-container2 {
-  position: relative;
-  display: block;
-  background-image: url(/images/pattern2.png);
-  background-repeat: no-repeat;
-  height: 100%;
+.packages-hd1 {
+  @include white-heading();
+  margin: 0px;
+  padding: 1em 0em 1em 0em;
 }
+
 .card-wrapper {
   display: flex;
   flex-direction: row;
@@ -179,8 +182,7 @@ height: 260px;
 margin: 0px;
 }
 .food-card .card-text {
-  font-size: 18px;
-  font-family: $content-font;
+  @include content-text();
   margin: 0em 1.5em 0em 1.5em;
 
 }
@@ -191,13 +193,24 @@ margin: 0px;
   font-family: $heading-font;
   text-transform: uppercase;
 }
-.content-container-wrapper {
+.welcome-img-container {
+  position: relative;
+  display: block;
+  background-image: url(/images/pattern2.png);
+  background-repeat: no-repeat;
+  height: 100%;
+}
+.welcome-hd1 {
+  @include white-heading();
+  margin: 0px;
+  padding: 1em 0em 1em 0em;
+}
+.welcome-container-wrapper {
   display: flex;
   justify-content: space-evenly;
 }
-.content-text-card {
-  font-family: $content-font;
-  font-size: 18px;
+.welcome-text-card {
+@include content-text();
   padding: 4em 4em 4em 4em;
   width: 583px;
   height: 130px;
@@ -205,7 +218,7 @@ margin: 0px;
 
 background-color: white;
 }
-.content-img {
+.welcome-content-img {
   width: 621px;
   height: 398px;
   margin: 4.5em;
@@ -258,57 +271,36 @@ hr.solid {
 
 }
 
-  @media(max-width: 800px) {
-    .brand-title{
-    @include logo-text();
-    margin-top: 0.5em;
-   }
-   .logo-section {
-     display: flex;
-     justify-content: space-evenly;
-     
-   }
-   #brand-logo {
-     height: 100%;
-     width: 25%;
-     margin-left: 0.5em;
-     margin-right: 0em;
-   }
-    .navbar {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
+@media(max-width: 768px) {
+  .site-container {
   
-    .toggle-button {
-      display: flex;
-      font-size: 2em;
-      right: 1.5em;
-  
-    }
-  
-    .navbar-links {
-      display: none;
-      width: 100%;
-      
-    }
-  
-    .navbar-links ul {
-      width: 100%;
-    
-     
-      align-items: center;
-      flex-direction: column;
-    }
-  
-    .navbar-links ul li {
-      padding: 1.5em;
-      
-    }
-  
-    .navbar-links.active {
-      display: flex;
-    }
   }
-/*# sourceMappingURL=styles.css.map */
+  .cta-img-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .packages-img-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
 
+}
+
+/*
+@media(max-width: 900px) {
+
+}
+
+ 
+ @media(max-width: 600px){
+
+ }
+ @media(max-width: 480px) {
+
+ }*/
+
+/*# sourceMappingURL=styles.css.map */
