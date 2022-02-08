@@ -8,7 +8,7 @@ $content-font: 'PT Serif', serif;
   font-family: $logo-font;
   margin: 0;
   font-weight: 800;
-  font-size: 2em; 
+  font-size: 2.5em; 
   text-transform: uppercase;
 }
 @mixin red-button() {
@@ -17,7 +17,7 @@ $content-font: 'PT Serif', serif;
   color: #C4171D;
   border: 1px solid #C4171D;
   font-size: 18px;
-  padding: 0.5em;
+  padding: 0.5em 2.5em 0.5em 2.5em;
 }
 @mixin food-card() {
 @include red-button();
@@ -41,12 +41,13 @@ body {
   background-color: #ffffff;
 
 }
+
 .site-container {
  
 }
 .brand-title {
  @include logo-text();
- margin-top: 0.5em;
+ margin-top: 0.3em;
 
 }
 .logo-section {
@@ -56,12 +57,12 @@ body {
 }
 .brand-logo {
   height: 100%;
-  width: 25%;
+  width: 20%;
   margin-left: 2em;
   margin-right: 0em;
 }
 .navbar {
-  margin: 1em 0em  1em 0em;
+  margin: 0.5em 0em  0.5em 0em;
   background-color: white;
   display: flex;
   position: relative;
@@ -94,7 +95,8 @@ body {
   text-decoration: none;
 }
 .navbar-links a:hover {
-  color: #C4171D;
+  color: #C4171D ;
+border-bottom: 1px solid #C4171D;
   
 }
 
@@ -111,22 +113,38 @@ body {
   .cta-img-container {
     position: relative;
     height: 100%;
-    width: 100%;;
+    width: 100%;
+    
 
 }
 .cta-img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 630px;
   overflow: hidden;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 .cta-card {
+  
   position: absolute;
-  width: 720px;
-  height: 295px;
-  margin: 0em 10em;
-  bottom: 20em;
+  width: 600px;
+  height: 195px;
+  display: flex;
+ justify-content: center;
+  bottom: 10em;
+  margin-left: 5em;
+  padding: 3em;
   background-color: rgba(196, 23, 29, 0.61);
+}
+.cta-content {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+ 
 }
 .cta-hd1 {
 @include white-heading();
@@ -134,16 +152,20 @@ margin: 0px;
 padding-top: 1em;
 
 }
-.cta-hd2 {
-  @include white-heading();
-  margin: 0px;
-  padding-top: 1em;
-  }
 .cta-text {
   color: white;
   text-align: left;
-  padding: 0em 5.5em 0em 5.5em;
+  padding: 0em 2em 0em 2em;
   @include content-text();
+
+}
+.cta-btn {
+  @include red-button();
+}
+.cta-btn:hover {
+  background-color: #C4171D;
+border: 1px solid white;
+color: white;
 }
 .packages-img-container {
   position: relative;
@@ -151,34 +173,50 @@ padding-top: 1em;
   background-image: url(/images/pattern1.png);
   background-repeat: no-repeat;
   height: 100%;
+  width: 100%;
 }
 .packages-hd1 {
   @include white-heading();
   margin: 0px;
-  padding: 1em 0em 1em 0em;
+  padding: 1em 0em 1.5em 0em;
 }
 
 .card-wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  
+  justify-content: space-evenly;
   
 }
 .card-btn {
 @include red-button();
-margin: 2em 6em 2em 6em;
+margin-top: 2em;
+
+
+}
+.card-btn:hover {
+background-color: #C4171D;
+border: 1px solid white;
+color: white;
 }
 .food-card {
 background-color: #ffffff;
 width: 350px;
-height: 552px;
+height: 470px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 margin-bottom: 5em;
+padding-bottom: 5em;
 
 }
 .food-card .card-img {
 width: 350px;
 height: 260px;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
 margin: 0px;
 }
 .food-card .card-text {
@@ -199,6 +237,7 @@ margin: 0px;
   background-image: url(/images/pattern2.png);
   background-repeat: no-repeat;
   height: 100%;
+  width: 100%;
 }
 .welcome-hd1 {
   @include white-heading();
@@ -259,7 +298,6 @@ hr.solid {
 .socialmedia-list {
   color: #C4171D;
   font-size: 44px;
- 
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -268,9 +306,10 @@ hr.solid {
 }
 .socialmedia-list li {
   margin-left: 0.5em;
-
 }
-
+.socialmedia-list a {
+  color: #C4171D;
+}
 @media(max-width: 768px) {
   .site-container {
   

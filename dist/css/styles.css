@@ -15,9 +15,9 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   font-weight: 800;
-  font-size: 2em;
+  font-size: 2.5em;
   text-transform: uppercase;
-  margin-top: 0.5em;
+  margin-top: 0.3em;
 }
 
 .logo-section {
@@ -31,13 +31,13 @@ body {
 
 .brand-logo {
   height: 100%;
-  width: 25%;
+  width: 20%;
   margin-left: 2em;
   margin-right: 0em;
 }
 
 .navbar {
-  margin: 1em 0em  1em 0em;
+  margin: 0.5em 0em  0.5em 0em;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,6 +82,7 @@ body {
 
 .navbar-links a:hover {
   color: #C4171D;
+  border-bottom: 1px solid #C4171D;
 }
 
 .toggle-button {
@@ -102,17 +103,43 @@ body {
 .cta-img {
   display: block;
   width: 100%;
-  height: 100%;
+  height: 630px;
   overflow: hidden;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .cta-card {
   position: absolute;
-  width: 720px;
-  height: 295px;
-  margin: 0em 10em;
-  bottom: 20em;
+  width: 600px;
+  height: 195px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 10em;
+  margin-left: 5em;
+  padding: 3em;
   background-color: rgba(196, 23, 29, 0.61);
+}
+
+.cta-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
 }
 
 .cta-hd1 {
@@ -123,20 +150,27 @@ body {
   padding-top: 1em;
 }
 
-.cta-hd2 {
-  color: white;
-  text-align: center;
-  font-family: "Montserrat", sans-serif;
-  margin: 0px;
-  padding-top: 1em;
-}
-
 .cta-text {
   color: white;
   text-align: left;
-  padding: 0em 5.5em 0em 5.5em;
+  padding: 0em 2em 0em 2em;
   font-family: "PT Serif", serif;
   font-size: 18px;
+}
+
+.cta-btn {
+  font-family: "PT Serif", serif;
+  background-color: white;
+  color: #C4171D;
+  border: 1px solid #C4171D;
+  font-size: 18px;
+  padding: 0.5em 2.5em 0.5em 2.5em;
+}
+
+.cta-btn:hover {
+  background-color: #C4171D;
+  border: 1px solid white;
+  color: white;
 }
 
 .packages-img-container {
@@ -145,6 +179,7 @@ body {
   background-image: url(/images/pattern1.png);
   background-repeat: no-repeat;
   height: 100%;
+  width: 100%;
 }
 
 .packages-hd1 {
@@ -152,7 +187,7 @@ body {
   text-align: center;
   font-family: "Montserrat", sans-serif;
   margin: 0px;
-  padding: 1em 0em 1em 0em;
+  padding: 1em 0em 1.5em 0em;
 }
 
 .card-wrapper {
@@ -163,10 +198,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .card-btn {
@@ -175,20 +209,50 @@ body {
   color: #C4171D;
   border: 1px solid #C4171D;
   font-size: 18px;
-  padding: 0.5em;
-  margin: 2em 6em 2em 6em;
+  padding: 0.5em 2.5em 0.5em 2.5em;
+  margin-top: 2em;
+}
+
+.card-btn:hover {
+  background-color: #C4171D;
+  border: 1px solid white;
+  color: white;
 }
 
 .food-card {
   background-color: #ffffff;
   width: 350px;
-  height: 552px;
+  height: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 5em;
+  padding-bottom: 5em;
 }
 
 .food-card .card-img {
   width: 350px;
   height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0px;
 }
 
@@ -211,6 +275,7 @@ body {
   background-image: url(/images/pattern2.png);
   background-repeat: no-repeat;
   height: 100%;
+  width: 100%;
 }
 
 .welcome-hd1 {
@@ -282,7 +347,7 @@ body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   font-weight: 800;
-  font-size: 2em;
+  font-size: 2.5em;
   text-transform: uppercase;
   padding: 0;
   margin-left: 1.5em;
@@ -315,6 +380,10 @@ hr.solid {
 
 .socialmedia-list li {
   margin-left: 0.5em;
+}
+
+.socialmedia-list a {
+  color: #C4171D;
 }
 
 @media (max-width: 768px) {
