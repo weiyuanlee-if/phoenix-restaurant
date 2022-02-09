@@ -121,7 +121,7 @@ body {
           justify-content: center;
   bottom: 10em;
   margin-left: 5em;
-  padding: 3em;
+  padding: 1.5em 1em 3em 1em;
   background-color: rgba(196, 23, 29, 0.61);
 }
 
@@ -250,9 +250,6 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   margin: 0px;
 }
 
@@ -279,11 +276,11 @@ body {
 }
 
 .welcome-hd1 {
-  color: white;
-  text-align: center;
+  color: black;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
   margin: 0px;
-  padding: 1em 0em 1em 0em;
+  padding: 1em 0em 0.5em 0em;
 }
 
 .welcome-container-wrapper {
@@ -296,13 +293,43 @@ body {
 }
 
 .welcome-text-card {
+  width: 600px;
+  height: 195px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em 3em 4em 3em;
+  margin: 8em 2em 5em 4em;
+  background-color: white;
+}
+
+.welcome-text {
   font-family: "PT Serif", serif;
   font-size: 18px;
-  padding: 4em 4em 4em 4em;
-  width: 583px;
-  height: 130px;
-  margin: 8em 2em 5em 2em;
+}
+
+.book-btn {
+  font-family: "PT Serif", serif;
   background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-size: 18px;
+  padding: 0.5em 2.5em 0.5em 2.5em;
+}
+
+.book-btn:hover {
+  color: white;
+  background-color: black;
 }
 
 .welcome-content-img {

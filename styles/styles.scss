@@ -19,6 +19,15 @@ $content-font: 'PT Serif', serif;
   font-size: 18px;
   padding: 0.5em 2.5em 0.5em 2.5em;
 }
+@mixin black-button() {
+  font-family: $content-font;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-size: 18px;
+  padding: 0.5em 2.5em 0.5em 2.5em;
+  
+}
 @mixin food-card() {
 @include red-button();
 }
@@ -134,7 +143,7 @@ border-bottom: 1px solid #C4171D;
  justify-content: center;
   bottom: 10em;
   margin-left: 5em;
-  padding: 3em;
+  padding: 1.5em 1em 3em 1em;
   background-color: rgba(196, 23, 29, 0.61);
 }
 .cta-content {
@@ -216,7 +225,6 @@ width: 350px;
 height: 260px;
 display: flex;
 flex-direction: column;
-align-items: flex-start;
 margin: 0px;
 }
 .food-card .card-text {
@@ -240,22 +248,36 @@ margin: 0px;
   width: 100%;
 }
 .welcome-hd1 {
-  @include white-heading();
+ color: black;
+ font-family: $heading-font;
+  text-align: center;
   margin: 0px;
-  padding: 1em 0em 1em 0em;
+  padding: 1em 0em 0.5em 0em;
 }
 .welcome-container-wrapper {
   display: flex;
   justify-content: space-evenly;
 }
 .welcome-text-card {
+  width: 600px;
+  height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ padding: 1.5em 3em 4em 3em;
+  margin: 8em 2em 5em 4em;
+  background-color: white;
+}
+.welcome-text {
 @include content-text();
-  padding: 4em 4em 4em 4em;
-  width: 583px;
-  height: 130px;
-  margin: 8em 2em 5em 2em;
-
-background-color: white;
+}
+.book-btn {
+  @include black-button();
+}
+.book-btn:hover {
+  color: white;
+  background-color: black;
 }
 .welcome-content-img {
   width: 621px;
