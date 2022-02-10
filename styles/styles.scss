@@ -1,16 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=PT+Serif&display=swap');
 
-$heading-font: 'Montserrat', sans-serif;
-$logo-font: 'Montserrat', sans-serif;
-$content-font: 'PT Serif', serif;
+$heading-font: 'Montserrat',
+sans-serif;
+$logo-font: 'Montserrat',
+sans-serif;
+$content-font: 'PT Serif',
+serif;
+
 @mixin logo-text() {
   color: #C4171D;
   font-family: $logo-font;
   margin: 0;
   font-weight: 800;
-  font-size: 2.5em; 
+  font-size: 2.5em;
   text-transform: uppercase;
 }
+
 @mixin red-button() {
   font-family: $content-font;
   background-color: white;
@@ -19,6 +24,7 @@ $content-font: 'PT Serif', serif;
   font-size: 18px;
   padding: 0.5em 2.5em 0.5em 2.5em;
 }
+
 @mixin black-button() {
   font-family: $content-font;
   background-color: white;
@@ -26,20 +32,24 @@ $content-font: 'PT Serif', serif;
   border: 1px solid black;
   font-size: 18px;
   padding: 0.5em 2.5em 0.5em 2.5em;
-  
+
 }
+
 @mixin food-card() {
-@include red-button();
+  @include red-button();
 }
+
 @mixin white-heading() {
   color: white;
   text-align: center;
   font-family: $heading-font;
 }
+
 @mixin content-text() {
   font-family: $content-font;
   font-size: 18px;
 }
+
 html {
   box-sizing: border-box;
 }
@@ -51,27 +61,27 @@ body {
 
 }
 
-.site-container {
- 
-}
 .brand-title {
- @include logo-text();
- margin-top: 0.3em;
+  @include logo-text();
+  margin-top: 0.3em;
 
 }
+
 .logo-section {
   display: flex;
   justify-content: space-evenly;
-  
+
 }
+
 .brand-logo {
   height: 100%;
   width: 20%;
   margin-left: 2em;
   margin-right: 0em;
 }
+
 .navbar {
-  margin: 0.5em 0em  0.5em 0em;
+  margin: 0.5em 0em 0.5em 0em;
   background-color: white;
   display: flex;
   position: relative;
@@ -80,7 +90,7 @@ body {
 }
 
 .navbar-links {
-  font-family:$content-font;
+  font-family: $content-font;
   color: black;
   font-size: 1.2em;
   height: 100%;
@@ -99,18 +109,20 @@ body {
   margin-left: 3em;
   list-style: none;
 }
+
 .navbar-links a {
   color: black;
   text-decoration: none;
 }
+
 .navbar-links a:hover {
-  color: #C4171D ;
-border-bottom: 1px solid #C4171D;
-  
+  color: #C4171D;
+  border-bottom: 2px solid #C4171D;
+
 }
 
 .toggle-button {
-  color:#C4171D;
+  color: #C4171D;
   display: none;
   position: fixed;
   top: 1em;
@@ -119,13 +131,14 @@ border-bottom: 1px solid #C4171D;
   font-size: 1.5em;
 }
 
-  .cta-img-container {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    
+.cta-img-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+
 
 }
+
 .cta-img {
   display: block;
   width: 100%;
@@ -134,33 +147,37 @@ border-bottom: 1px solid #C4171D;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
+
 .cta-card {
-  
+
   position: absolute;
   width: 600px;
   height: 195px;
   display: flex;
- justify-content: center;
-  bottom: 10em;
+  justify-content: center;
+  bottom: 12em;
   margin-left: 5em;
   padding: 1.5em 1em 3em 1em;
   background-color: rgba(196, 23, 29, 0.61);
 }
+
 .cta-content {
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: auto;
- 
-}
-.cta-hd1 {
-@include white-heading();
-margin: 0px; 
-padding-top: 1em;
 
 }
+
+.cta-hd1 {
+  @include white-heading();
+  margin: 0px;
+  padding-top: 1em;
+
+}
+
 .cta-text {
   color: white;
   text-align: left;
@@ -168,22 +185,25 @@ padding-top: 1em;
   @include content-text();
 
 }
+
 .cta-btn {
   @include red-button();
 }
+
 .cta-btn:hover {
   background-color: #C4171D;
-border: 1px solid white;
-color: white;
+  border: 1px solid white;
+  color: white;
 }
+
 .packages-img-container {
   position: relative;
   display: block;
-  background-image: url(/images/pattern1.png);
-  background-repeat: no-repeat;
+  background-image: url("/images/pattern1.png");
   height: 100%;
   width: 100%;
 }
+
 .packages-hd1 {
   @include white-heading();
   margin: 0px;
@@ -193,71 +213,79 @@ color: white;
 .card-wrapper {
   display: flex;
   flex-direction: row;
-  
   justify-content: space-evenly;
-  
+
 }
+
 .card-btn {
-@include red-button();
-margin-top: 2em;
+  @include red-button();
+  margin-top: 2em;
 
 
 }
+
 .card-btn:hover {
-background-color: #C4171D;
-border: 1px solid white;
-color: white;
+  background-color: #C4171D;
+  border: 1px solid white;
+  color: white;
 }
+
 .food-card {
-background-color: #ffffff;
-width: 350px;
-height: 470px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-bottom: 5em;
-padding-bottom: 5em;
+  background-color: #ffffff;
+  width: 350px;
+  height: 470px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5em;
+  padding-bottom: 4em;
 
 }
+
 .food-card .card-img {
-width: 350px;
-height: 260px;
-display: flex;
-flex-direction: column;
-margin: 0px;
+  width: 350px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
 }
+
 .food-card .card-text {
   @include content-text();
   margin: 0em 1.5em 0em 1.5em;
 
 }
+
 .food-card .card-hd {
- 
+
   text-align: center;
   font-size: 24px;
   font-family: $heading-font;
   text-transform: uppercase;
 }
+
 .welcome-img-container {
   position: relative;
   display: block;
-  background-image: url(/images/pattern2.png);
-  background-repeat: no-repeat;
+  background: url("/images/pattern2.png");
   height: 100%;
   width: 100%;
 }
+
 .welcome-hd1 {
- color: black;
- font-family: $heading-font;
+  color: black;
+  font-family: $heading-font;
   text-align: center;
   margin: 0px;
   padding: 1em 0em 0.5em 0em;
 }
+
 .welcome-container-wrapper {
   display: flex;
   justify-content: space-evenly;
 }
+
 .welcome-text-card {
   width: 600px;
   height: 195px;
@@ -265,47 +293,56 @@ margin: 0px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
- padding: 1.5em 3em 4em 3em;
+  padding: 1.5em 3em 4em 3em;
   margin: 8em 2em 5em 4em;
   background-color: white;
 }
+
 .welcome-text {
-@include content-text();
+  @include content-text();
 }
+
 .book-btn {
   @include black-button();
+
 }
+
 .book-btn:hover {
   color: white;
   background-color: black;
 }
+
 .welcome-content-img {
   width: 621px;
   height: 398px;
   margin: 4.5em;
 }
+
 .footer-address {
-  
+
   text-align: center;
   font-size: 18px;
   background-color: white;
   font-family: $content-font;
 
 }
+
 .footer-navbar {
   margin-top: 5em;
   display: flex;
   flex-direction: row;
   justify-content: center;
- align-items: center;
+  align-items: center;
   list-style-type: none;
   padding: 0px;
   margin-right: 4em;
 }
+
 .footer-navbar li {
-margin-left: 3em;
+  margin-left: 3em;
 
 }
+
 .footer-logo {
   @include logo-text();
   padding: 0;
@@ -315,8 +352,9 @@ margin-left: 3em;
 
 hr.solid {
   border-top: 2px solid #C4171D;
- margin: 2em;
+  margin: 2em;
 }
+
 .socialmedia-list {
   color: #C4171D;
   font-size: 44px;
@@ -326,25 +364,29 @@ hr.solid {
   justify-content: center;
   margin-right: 1em;
 }
+
 .socialmedia-list li {
   margin-left: 0.5em;
 }
+
 .socialmedia-list a {
   color: #C4171D;
 }
+
 @media(max-width: 768px) {
-  .site-container {
-  
-  }
+
+
   .cta-img-container {
     display: flex;
     flex-direction: column;
   }
+
   .packages-img-container {
     display: flex;
     flex-direction: column;
   }
-  .card-wrapper{
+
+  .card-wrapper {
     display: flex;
     flex-direction: column;
   }

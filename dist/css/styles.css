@@ -37,7 +37,7 @@ body {
 }
 
 .navbar {
-  margin: 0.5em 0em  0.5em 0em;
+  margin: 0.5em 0em 0.5em 0em;
   background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,7 +82,7 @@ body {
 
 .navbar-links a:hover {
   color: #C4171D;
-  border-bottom: 1px solid #C4171D;
+  border-bottom: 2px solid #C4171D;
 }
 
 .toggle-button {
@@ -119,7 +119,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  bottom: 10em;
+  bottom: 12em;
   margin-left: 5em;
   padding: 1.5em 1em 3em 1em;
   background-color: rgba(196, 23, 29, 0.61);
@@ -176,8 +176,7 @@ body {
 .packages-img-container {
   position: relative;
   display: block;
-  background-image: url(/images/pattern1.png);
-  background-repeat: no-repeat;
+  background-image: url("/images/pattern1.png");
   height: 100%;
   width: 100%;
 }
@@ -237,7 +236,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 5em;
-  padding-bottom: 5em;
+  padding-bottom: 4em;
 }
 
 .food-card .card-img {
@@ -269,8 +268,7 @@ body {
 .welcome-img-container {
   position: relative;
   display: block;
-  background-image: url(/images/pattern2.png);
-  background-repeat: no-repeat;
+  background: url("/images/pattern2.png");
   height: 100%;
   width: 100%;
 }
