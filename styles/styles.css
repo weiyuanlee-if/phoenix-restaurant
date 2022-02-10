@@ -1,0 +1,456 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=PT+Serif&display=swap");
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #ffffff;
+}
+
+.brand-title {
+  color: #C4171D;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-weight: 800;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin-top: 0.3em;
+}
+
+.logo-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.brand-logo {
+  height: 100%;
+  width: 20%;
+  margin-left: 2em;
+  margin-right: 0em;
+}
+
+.navbar {
+  margin: 0.5em 0em 0.5em 0em;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-links {
+  font-family: "PT Serif", serif;
+  color: black;
+  font-size: 1.2em;
+  height: 100%;
+}
+
+.navbar-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 6em;
+  list-style-type: none;
+}
+
+.navbar-links li {
+  text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 3em;
+  list-style: none;
+}
+
+.navbar-links a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-links a:hover {
+  color: #C4171D;
+  border-bottom: 2px solid #C4171D;
+}
+
+.toggle-button {
+  color: #C4171D;
+  display: none;
+  position: fixed;
+  top: 1em;
+  right: 1.5em;
+  font-size: 1.5em;
+}
+
+.cta-img-container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.cta-img {
+  display: block;
+  width: 100%;
+  height: 630px;
+  overflow: hidden;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.cta-card {
+  position: absolute;
+  width: 600px;
+  height: 195px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  bottom: 12em;
+  margin-left: 5em;
+  padding: 1.5em 1em 3em 1em;
+  background-color: rgba(196, 23, 29, 0.61);
+}
+
+.cta-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: auto;
+}
+
+.cta-hd1 {
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding-top: 1em;
+}
+
+.cta-text {
+  color: white;
+  text-align: left;
+  padding: 0em 2em 0em 2em;
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+}
+
+.cta-btn {
+  font-family: "PT Serif", serif;
+  background-color: white;
+  color: #C4171D;
+  border: 1px solid #C4171D;
+  font-size: 18px;
+  padding: 0.5em 2.5em 0.5em 2.5em;
+}
+
+.cta-btn:hover {
+  background-color: #C4171D;
+  border: 1px solid white;
+  color: white;
+}
+
+.packages-img-container {
+  position: relative;
+  display: block;
+  background-image: url(https://github.com/weiyuanlee-if/heavenlybirdrestaurant/blob/main/images/pattern1.png?raw=true);
+  height: 100%;
+  width: 100%;
+}
+
+.packages-hd1 {
+  color: white;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin: 0px;
+  padding: 1em 0em 1.5em 0em;
+}
+
+.card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card-btn {
+  font-family: "PT Serif", serif;
+  background-color: white;
+  color: #C4171D;
+  border: 1px solid #C4171D;
+  font-size: 18px;
+  padding: 0.5em 2.5em 0.5em 2.5em;
+  margin-top: 2em;
+}
+
+.card-btn:hover {
+  background-color: #C4171D;
+  border: 1px solid white;
+  color: white;
+}
+
+.food-card {
+  background-color: #ffffff;
+  width: 350px;
+  height: 470px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 5em;
+  padding-bottom: 4em;
+}
+
+.food-card .card-img {
+  width: 350px;
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0px;
+}
+
+.food-card .card-text {
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+  margin: 0em 1.5em 0em 1.5em;
+}
+
+.food-card .card-hd {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.welcome-img-container {
+  position: relative;
+  display: block;
+  background: url("https://github.com/weiyuanlee-if/heavenlybirdrestaurant/blob/main/images/pattern2.png?raw=true");
+  height: 100%;
+  width: 100%;
+}
+
+.welcome-hd1 {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 0px;
+  padding: 1em 0em 0.5em 0em;
+}
+
+.welcome-container-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.welcome-text-card {
+  width: 600px;
+  height: 195px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1.5em 3em 4em 3em;
+  margin: 8em 2em 5em 4em;
+  background-color: white;
+}
+
+.welcome-text {
+  font-family: "PT Serif", serif;
+  font-size: 18px;
+}
+
+.book-btn {
+  font-family: "PT Serif", serif;
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  font-size: 18px;
+  padding: 0.5em 2.5em 0.5em 2.5em;
+}
+
+.book-btn:hover {
+  color: white;
+  background-color: black;
+}
+
+.welcome-content-img {
+  width: 621px;
+  height: 398px;
+  margin: 4.5em;
+}
+
+.footer-address {
+  text-align: center;
+  font-size: 18px;
+  background-color: white;
+  font-family: "PT Serif", serif;
+}
+
+.footer-navbar {
+  margin-top: 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  padding: 0px;
+  margin-right: 4em;
+}
+
+.footer-navbar li {
+  margin-left: 3em;
+}
+
+.footer-logo {
+  color: #C4171D;
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  font-weight: 800;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  padding: 0;
+  margin-left: 1.5em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+hr.solid {
+  border-top: 2px solid #C4171D;
+  margin: 2em;
+}
+
+.socialmedia-list {
+  color: #C4171D;
+  font-size: 44px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 1em;
+}
+
+.socialmedia-list li {
+  margin-left: 0.5em;
+}
+
+.socialmedia-list a {
+  color: #C4171D;
+}
+
+@media (max-width: 768px) {
+  .cta-img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .packages-img-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+/*
+@media(max-width: 900px) {
+
+}
+
+ 
+ @media(max-width: 600px){
+
+ }
+ @media(max-width: 480px) {
+
+ }*/
+/*# sourceMappingURL=styles.css.map */
