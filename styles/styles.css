@@ -9,9 +9,7 @@ body {
   margin: 0px;
   background-color: #ffffff;
 }
-/*.site-container {
-  
-}*/
+
 .brand-title {
   color: #C4171D;
   font-family: "Montserrat", sans-serif;
@@ -449,16 +447,110 @@ hr.solid {
   }
 }
 
-/*
-@media(max-width: 900px) {
 
+@media(max-width: 900px) {
+  .site-container {
+    display: flex;
+      flex-direction: column;
+      }
+      .navbar { 
+        display: flex;
+        flex-direction: column;
+      }
+      .cta-img-container {
+        display: flex;
+      flex-direction: column;
+      }
+      .welcome-container-wrapper {
+        display: flex;
+      flex-direction: column;
+      }
+      .packages-img-container {
+        display: flex;
+      flex-direction: column;
+      }
+      .footer-address {
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-navbar {
+        display: flex;
+        flex-direction: column;
+      }
+      .socialmedia-list {
+        display: flex;
+        flex-direction: column;
+      }
 }
 
  
  @media(max-width: 600px){
-
+  .site-container {
+    display: flex;
+      flex-direction: column;
+      }
+      .navbar { 
+        display: flex;
+        flex-direction: column;
+      }
+      .cta-img-container {
+        display: flex;
+      flex-direction: column;
+      }
+      .welcome-container-wrapper {
+        display: flex;
+      flex-direction: column;
+      }
+      .packages-img-container {
+        display: flex;
+      flex-direction: column;
+      }
+      .footer-address {
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-navbar {
+        display: flex;
+        flex-direction: column;
+      }
+      .socialmedia-list {
+        display: flex;
+        flex-direction: column;
+      }
  }
  @media(max-width: 480px) {
+  .site-container {
+    display: flex;
+      flex-direction: column;
+      }
+      .navbar { 
+        display: flex;
+        flex-direction: column;
+      }
+      .cta-img-container {
+        display: flex;
+      flex-direction: column;
+      }
+      .welcome-container-wrapper {
+        display: flex;
+      flex-direction: column;
+      }
+      .packages-img-container {
+        display: flex;
+      flex-direction: column;
+      }
+      .footer-address {
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-navbar {
+        display: flex;
+        flex-direction: column;
+      }
+      .socialmedia-list {
+        display: flex;
+        flex-direction: column;
+      }
 
- }*/
+ }
 /*# sourceMappingURL=styles.css.map */
