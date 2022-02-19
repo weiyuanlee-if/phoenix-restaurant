@@ -9,16 +9,9 @@ body {
   margin: 0px;
   background-color: #ffffff;
 }
-.site-container {
-  display: grid;
-  grid-template-areas: 
-                       "cta-img-container"
-                       "packages-img-container"
-                       "welcome-img-container";
- /*grid-template-columns: repeat(auto-fit, minmax(3fr)); */
-  grid-template-rows: repeat(3, 0.8fr)
-
-}
+/*.site-container {
+  
+}*/
 .brand-title {
   color: #C4171D;
   font-family: "Montserrat", sans-serif;
@@ -104,20 +97,19 @@ body {
 }
 
 .cta-img-container {
-  background: url("https://github.com/weiyuanlee-if/heavenlybirdrestaurant/blob/main/images/dumplingcta.png?raw=true") center;
-  background-size: cover;
-  
-  
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
-/*.cta-img {
+.cta-img {
   display: block;
   width: 100%;
   height: 625px;
   overflow: hidden;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
-}*/
+}
 
 .cta-card {
   position: absolute;
