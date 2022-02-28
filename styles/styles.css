@@ -686,8 +686,9 @@ background-color: white;
     font-weight: 800;
     font-size: 2em;
   }
-}
+} */
 @media only screen and (max-width: 992px) {
+
 
   .brand-logo {
     height: 100%;
@@ -810,7 +811,7 @@ background-color: white;
   }
   .card-wrapper {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
   }
   
   .packages-bg {
@@ -828,28 +829,28 @@ background-color: white;
   
   .food-card {
     background-color: #ffffff;
-    width: 610px;
-    height: 245px;
+    width: 250px;
+    height: 475px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0em 3.5em 4em 3.5em;
+    margin: 0em 0.5em 4em 0.5em;
     padding: 0em 2em 3.5em 2em;
   }
   
   .food-card .card-img {
-    width: 375px;
-    height: 260px;
+    width: 315px;
+    height: 305px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -877,14 +878,14 @@ background-color: white;
   flex-direction: column;
   }
   .welcome-content-img {
-    width: 370px;
-height: 280px;
-margin: 0em 3.5em 4em 3.5em;
+    width: 700px;
+height: 390px;
+margin: 0em 9em 4em 9em;
   }
   
 .welcome-text-card {
-  width: 310px;
-  height: 375px;
+  width: 670px;
+  height: 275px;
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
@@ -899,7 +900,7 @@ display: flex;
   -ms-flex-align: center;
       align-items: center;
 padding: 0em 2em 2em 2em;
-margin: 5em 3.5em 4em 3.5em;
+margin: 5em 8em 4em 8em;
 background-color: white;
 }
 .welcome-hd1 {
@@ -938,8 +939,9 @@ background-color: white;
     font-size: 2em;
   }
 }
-*/
+/* i accidently did 375 pain pain pain */
 @media only screen and (max-width: 768px) {
+
 
   .brand-logo {
     height: 100%;
@@ -1080,22 +1082,22 @@ background-color: white;
   
   .food-card {
     background-color: #ffffff;
-    width: 610px;
-    height: 245px;
+    width: 310px;
+    height: 475px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 0em 3.5em 4em 3.5em;
+    margin: 0em 12em 4em 12em;
     padding: 0em 2em 3.5em 2em;
   }
   
@@ -1129,14 +1131,14 @@ background-color: white;
   flex-direction: column;
   }
   .welcome-content-img {
-    width: 370px;
-height: 280px;
-margin: 0em 3.5em 4em 3.5em;
+    width: 570px;
+height: 380px;
+margin: 0em 6em 4em 6em;
   }
   
 .welcome-text-card {
-  width: 310px;
-  height: 375px;
+  width: 510px;
+  height: 275px;
 display: -webkit-box;
 display: -ms-flexbox;
 display: flex;
@@ -1151,7 +1153,7 @@ display: flex;
   -ms-flex-align: center;
       align-items: center;
 padding: 0em 2em 2em 2em;
-margin: 5em 3.5em 4em 3.5em;
+margin: 5em 6em 4em 6em;
 background-color: white;
 }
 .welcome-hd1 {
