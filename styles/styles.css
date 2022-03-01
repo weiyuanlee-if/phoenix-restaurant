@@ -12,7 +12,6 @@ body {
 .site-container {
 width: auto;
 margin: auto;
-overflow: hidden;
 }
 
 .brand-title {
@@ -55,10 +54,12 @@ overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+          
 }
 
 .navbar-links {
   font-family: "PT Serif", serif;
+ 
   color: black;
   font-size: 1.2em;
   height: 100%;
@@ -68,17 +69,22 @@ overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-right: 6em;
-  list-style-type: none;
-}
+  padding: 0; 
+  overflow: hidden;
 
+  margin-right: 6em;
+}
 .navbar-links li {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
+  text-shadow: none;
+  box-sizing: border-box;
   margin-left: 3em;
-  list-style: none;
+  height: 1.5em;
+  list-style-type: none;
 }
 
 .navbar-links a {
@@ -292,6 +298,7 @@ overflow: hidden;
 }
 
 .welcome-container-wrapper {
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -939,7 +946,7 @@ background-color: white;
     font-size: 2em;
   }
 }
-/* i accidently did 375 pain pain pain */
+
 @media only screen and (max-width: 768px) {
 
 
